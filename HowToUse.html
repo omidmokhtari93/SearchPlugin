@@ -1,0 +1,30 @@
+﻿<html>
+<body style="text-align: right;">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="search.js"></script>
+    <link href="search.css" rel="stylesheet" />
+    <div id="searchDiv"></div>
+
+    <script>
+        $('#searchDiv').search({
+            width: '30%', // width of your searchbox
+            placeholder: '...', // search placeholder here
+            url: '/api/products', //api url 
+            arg: 'ProductName', // the argumnet passed to api
+            text: 'ProductName', // text property that returned from api
+            id: 'ProductId', // identity property that returned from api
+            append: {
+                text: 'append this text to drop down',
+                id: 1 //this value assigned for appended text
+            },
+            func: something //call this function after search completed and you get id and text in your function like ---> function something(id , text){}
+        });
+
+        function something(id , text) {
+            //this will call after search completed
+        }
+    </script>
+</body>
+</html>

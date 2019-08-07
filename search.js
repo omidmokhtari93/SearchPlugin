@@ -3,7 +3,7 @@
   var allOpt;
   div.css('width', options.width).addClass('search-input');
   var result_area = $('<div name="result-area" style="width:' + this.outerWidth() + 'px;"></div>');
-  var search_lodaing = $('<img src="../flower_depot/Images/loading.png"/>');
+  var search_lodaing = $('<img src="loading.png"/>');
   var input = $('<input type="text" autocomplete="off" name="search-field" placeholder="' + options.placeholder + '"/>');
   var badgesArea = $('<div name="badges-area"></div>')
   searchInit();
