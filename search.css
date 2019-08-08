@@ -38,7 +38,7 @@
         font-weight: bold;
         direction: rtl;
         padding: 2px 30px 2px 2px;
-        background-image: url(Search_Dark.png);
+        background-image: url(search.png);
         background-repeat: no-repeat;
         background-position: right 8px top 7px;
         background-size: 15px;
@@ -51,7 +51,7 @@
         outline: none;
         direction: rtl;
         padding-right: 25px;
-        background-image: url(funnel.png);
+        background-image: url(filter.png);
         background-repeat: no-repeat;
         background-position: right 5px top 3px;
         background-size: 15px;
